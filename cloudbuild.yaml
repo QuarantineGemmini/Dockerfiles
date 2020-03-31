@@ -1,0 +1,9 @@
+
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/chipyard-centos7-reqs', '.']
+
+images: ['gcr.io/$PROJECT_ID/chipyard-centos7-reqs']
+timeout: 86400s # 24hr
+
+
